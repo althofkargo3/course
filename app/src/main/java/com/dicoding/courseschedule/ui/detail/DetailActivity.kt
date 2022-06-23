@@ -3,8 +3,10 @@ package com.dicoding.courseschedule.ui.detail
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import com.dicoding.courseschedule.R
 import com.dicoding.courseschedule.data.Course
 import com.dicoding.courseschedule.util.DayName.Companion.getByNumber
@@ -23,16 +25,28 @@ class DetailActivity : AppCompatActivity() {
 
         val courseId = intent.getIntExtra(COURSE_ID, 0)
         val factory = DetailViewModelFactory.createFactory(this, courseId)
+        viewModel = ViewModelProvider(this, factory).get(DetailViewModel::class.java)
 
-
+        viewModel.course.observe(this) {
+            showCourseDetail(it)
+        }
     }
 
     private fun showCourseDetail(course: Course?) {
+        val tvName: TextView = findViewById(R.id.tv_course_name)
+        val tvTime: TextView = findViewById(R.id.tv_time)
+        val tvLecturer: TextView = findViewById(R.id.tv_lecturer)
+        val tvNote: TextView = findViewById(R.id.tv_note)
+
         course?.apply {
             val timeString = getString(R.string.time_format)
             val dayName = getByNumber(day)
             val timeFormat = String.format(timeString, dayName, startTime, endTime)
 
+            tvName.text = courseName
+            tvTime.text = timeFormat
+            tvLecturer.text = lecturer
+            tvNote.text = note
         }
     }
 

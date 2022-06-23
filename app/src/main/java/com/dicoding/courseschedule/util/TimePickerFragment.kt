@@ -8,7 +8,8 @@ import android.widget.TimePicker
 import androidx.fragment.app.DialogFragment
 import java.util.*
 
-class TimePickerFragment: DialogFragment(), TimePickerDialog.OnTimeSetListener {
+class TimePickerFragment(private val viewTag: String) : DialogFragment(),
+    TimePickerDialog.OnTimeSetListener {
 
     private var mListener: DialogTimeListener? = null
 
@@ -21,7 +22,7 @@ class TimePickerFragment: DialogFragment(), TimePickerDialog.OnTimeSetListener {
     }
 
     override fun onTimeSet(view: TimePicker?, hour: Int, minute: Int) {
-        mListener?.onDialogTimeSet(tag, hour, minute)
+        mListener?.onDialogTimeSet(viewTag, hour, minute)
     }
 
     override fun onAttach(context: Context) {

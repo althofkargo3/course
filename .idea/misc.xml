@@ -3,7 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/altho/Documents/BANGKIT/AAD/CourseScheduleApp/app/src/main/res/layout/activity_add_course.xml" value="0.1" />
+        <entry key="..\:/Users/altho/Documents/BANGKIT/AAD/CourseScheduleApp/app/src/main/res/layout/activity_detail.xml" value="0.19293478260869565" />
         <entry key="..\:/Users/altho/Documents/BANGKIT/AAD/CourseScheduleApp/app/src/main/res/layout/activity_home.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/altho/Documents/BANGKIT/AAD/CourseScheduleApp/app/src/main/res/layout/activity_list.xml" value="0.1" />
+        <entry key="..\:/Users/altho/Documents/BANGKIT/AAD/CourseScheduleApp/app/src/main/res/layout/card_home_view.xml" value="0.2" />
+        <entry key="..\:/Users/altho/Documents/BANGKIT/AAD/CourseScheduleApp/app/src/main/res/layout/content_list.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/altho/Documents/BANGKIT/AAD/CourseScheduleApp/app/src/main/res/layout/item_course.xml" value="0.25" />
+        <entry key="..\:/Users/altho/Documents/BANGKIT/AAD/CourseScheduleApp/app/src/main/res/layout/settings_activity.xml" value="0.17553191489361702" />
+        <entry key="..\:/Users/altho/Documents/BANGKIT/AAD/CourseScheduleApp/app/src/main/res/menu/menu_add.xml" value="0.22" />
+        <entry key="..\:/Users/altho/Documents/BANGKIT/AAD/CourseScheduleApp/app/src/main/res/menu/menu_detail.xml" value="0.27760416666666665" />
+        <entry key="..\:/Users/altho/Documents/BANGKIT/AAD/CourseScheduleApp/app/src/main/res/menu/menu_home.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/altho/Documents/BANGKIT/AAD/CourseScheduleApp/app/src/main/res/menu/menu_list.xml" value="0.27760416666666665" />
+        <entry key="..\:/Users/altho/Documents/BANGKIT/AAD/CourseScheduleApp/app/src/main/res/menu/sort_course.xml" value="0.27760416666666665" />
+        <entry key="..\:/Users/altho/Documents/BANGKIT/AAD/CourseScheduleApp/app/src/main/res/xml/root_preferences.xml" value="0.19293478260869565" />
       </map>
     </option>
   </component>
